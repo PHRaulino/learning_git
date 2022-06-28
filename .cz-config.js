@@ -14,9 +14,17 @@ module.exports = {
         confirmCommit: 'Tem certeza de que deseja prosseguir com o commit acima?'
     },
     skipQuestions: ['body', 'footer'],
+    scopeOverrides: {
+        'Config': [
+            { name: 'Commit' },
+            { name: 'Lint' },
+            { name: 'Teste' },
+        ]
+    },
     scopes: [
         { name: 'Rebase' },
         { name: 'Merge' },
         { name: 'Reset' },
+
     ]
 };
