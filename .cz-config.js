@@ -1,11 +1,11 @@
 module.exports = {
     types: [
-        { value: 'Lab', name: 'Lab:      Teste de estudo' },
-        { value: 'Feat', name: 'Feat:     Nova Feature' },
-        { value: 'Bug', name: 'Bug:      Correção de Bug' },
-        { value: 'Fix', name: 'Fix:      Correção' },
-        { value: 'Docs', name: 'Docs:     Alteração na documentação' },
-        { value: 'Config', name: 'Config:   Alteração na Configuração' },
+        { value: 'Lab ', name: 'Lab:      Teste de estudo' },
+        { value: 'Feat ', name: 'Feat:     Nova Feature' },
+        { value: 'Bug ', name: 'Bug:      Correção de Bug' },
+        { value: 'Fix ', name: 'Fix:      Correção' },
+        { value: 'Docs ', name: 'Docs:     Alteração na documentação' },
+        { value: 'Config ', name: 'Config:   Alteração de configuração' },
     ],
     messages: {
         type: 'Selecione o tipo de Commit:',
@@ -15,7 +15,7 @@ module.exports = {
     },
     skipQuestions: ['body', 'footer'],
     scopeOverrides: {
-        'Config': [
+        'Config ': [
             { name: 'Commit' },
             { name: 'Lint' },
             { name: 'Teste' },
@@ -25,6 +25,5 @@ module.exports = {
         { name: 'Rebase' },
         { name: 'Merge' },
         { name: 'Reset' },
-
     ]
 };
