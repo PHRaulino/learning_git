@@ -21,6 +21,12 @@ module.exports = {
     scopes: [
         { name: 'Rebase' },
         { name: 'Merge' },
+        { name: 'Checkout' },
+        { name: 'Cherry-Pick' },
+        { name: 'Diff' },
+        { name: 'Logs' },
         { name: 'Reset' },
+        { name: 'Revert' },
+        { name: 'Status' },
     ]
 };
